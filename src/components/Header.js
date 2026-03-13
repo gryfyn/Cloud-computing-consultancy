@@ -129,7 +129,7 @@ export default function Header() {
             {/* Logo */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
               <Image
-                src="/assets/logocompcon.PNG"
+                src="/assets/logocompcon.png"
                 alt="Cloud Computing Consultancy"
                 style={{ height: 48, width: "auto", objectFit: "contain" }}
                 width={70}
