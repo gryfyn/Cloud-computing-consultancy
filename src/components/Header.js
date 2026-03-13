@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 
-import { useState, useRef } from "react";
+import next from "next";
+import { useState, useRef, use } from "react";
 
 const NAV_LINKS = ["Home", "About", "Contact Us"];
 
@@ -126,10 +128,12 @@ export default function Header() {
 
             {/* Logo */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
-              <img
+              <Image
                 src="/assets/logocompcon.PNG"
                 alt="Cloud Computing Consultancy"
                 style={{ height: 48, width: "auto", objectFit: "contain" }}
+                width={70}
+                height={48}
               />
               <span style={{ fontWeight: 700, fontSize: "1.25rem", letterSpacing: "-0.025em" }}>
                 Cloud Computing <span style={{ color: "var(--primary)" }}>Consultancy</span>
